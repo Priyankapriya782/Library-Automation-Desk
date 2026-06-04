@@ -11,6 +11,10 @@ import LibrarianManagement from './components/LibrarianManagement';
 import HomePage from './components/HomePage';
 // @ts-ignore
 import bookshelfLogo from './assets/images/bookshelf_logo_1779725771754.png';
+// @ts-ignore
+import returnedBooksIcon from './assets/images/returned_books_icon_1780580203455.png';
+// @ts-ignore
+import returnedBanner from './assets/images/returned_banner_1780580363425.png';
 
 import { 
   BookOpen, 
@@ -705,12 +709,20 @@ export default function App() {
                 </div>
                 <div className="h-44 overflow-hidden relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1491849798628-711580d23d8c?q=80&w=400&auto=format&fit=crop" 
+                    src={returnedBanner} 
                     alt="Returned books" 
                     className="w-full h-full object-cover object-center sepia-[20%] opacity-90 contrast-[105%]"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-[#78521b]/5 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-[#78521b]/5 flex flex-col items-center justify-center gap-2">
+                    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#78521b]/40 shadow-lg bg-[#fdf9ee] flex items-center justify-center">
+                      <img 
+                        src={returnedBooksIcon} 
+                        alt="Returned Books Emblem" 
+                        className="w-full h-full object-cover"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
                     <span className="bg-[#7a541c] text-[#fdf6e2] font-black text-xs px-4 py-2 rounded-full shadow border border-[#3d2607] uppercase tracking-wider">
                       {studentReturnedRecords.length} Historic Logs
                     </span>
