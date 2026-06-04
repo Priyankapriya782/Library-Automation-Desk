@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-parchment-gold: #c6a052;
+  --color-parchment-light: #fdf6e2;
+  --color-parchment-dark: #5c3f15;
+}
+
+/* Custom premium parchment/warm wood texture styles */
+.parchment-container {
+  background-color: #f5e4bd;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 90% 80%, rgba(188, 143, 143, 0.15) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, rgba(92, 63, 21, 0.015) 0px, rgba(92, 63, 21, 0.015) 2px, transparent 2px, transparent 10px),
+    repeating-linear-gradient(-45deg, rgba(92, 63, 21, 0.015) 0px, rgba(92, 63, 21, 0.015) 2px, transparent 2px, transparent 10px);
+  box-shadow: inset 0 0 50px rgba(92, 63, 21, 0.3), 0 12px 36px rgba(0, 0, 0, 0.25);
+  border: 5px double #78521b;
+  color: #362208;
+}
+
+.parchment-header-accent {
+  background: linear-gradient(to bottom, #7a541c 0%, #54370f 100%);
+  border-bottom: 2px solid #3d2607;
+  color: #fdf6e2;
+}
+
+.parchment-input {
+  background-color: #fefcf3 !important;
+  border: 1.5px solid #a88d55 !important;
+  color: #2b1a05 !important;
+  border-radius: 8px !important;
+}
+
+.parchment-input::placeholder {
+  color: #8c7855 !important;
+  opacity: 0.8;
+}
+
+.parchment-input:focus {
+  outline: none !important;
+  border-color: #78521b !important;
+  box-shadow: 0 0 0 3px rgba(120, 82, 27, 0.25), inset 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+}
+
+.parchment-label {
+  color: #4a320f;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.parchment-btn {
+  background-color: #78521b;
+  color: #fdf6e2;
+  border: 1px solid #54370f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.parchment-btn:hover {
+  background-color: #926628;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.parchment-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}

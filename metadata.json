@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: College Library Management System",
+  "description": "A comprehensive, highly polished digital interface designed for librarians to manage book catalogs, student records, issues, returns, and track due dates and fines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
